@@ -16,10 +16,10 @@ export default function Blog() {
   }, []);
   return (
     <div>
-      <p>this is a blog</p>
+      <h1>Blog</h1>
       {/* {posts} */}
-      {posts?.map((post) => (
-        <Post {...post}></Post>
+      {posts?.map((post, i) => (
+        <Post {...post} key={i}></Post>
       ))}
     </div>
   );
