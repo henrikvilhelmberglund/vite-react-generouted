@@ -1,6 +1,6 @@
 ✔ 1. Vid start av applikationen, hämta samtliga inlägg från följande API: https://jsonplaceholder.typicode.com/posts @done(23-09-01 15:07)
 
-☐ 2. För varje post, rendera en <Post/>-komponent med ett inlägg som visar ut dess titel och textinnehåll. Längst ner i varje post ska det finnas en knapp för att visa information om användaren som skrev inlägget.
+✔ 2. För varje post, rendera en <Post/>-komponent med ett inlägg som visar ut dess titel och textinnehåll. Längst ner i varje post ska det finnas en knapp för att visa information om användaren som skrev inlägget. @done(23-09-01 15:12)
 
 ☐ 3. När knappen klickas på ska komponenten <UserInfo/> renderas inuti <Post/>-komponenten.
 

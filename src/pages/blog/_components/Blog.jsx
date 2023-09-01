@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Post from "./Post";
 
 export default function Blog() {
   const [posts, setPosts] = useState(null);
@@ -17,7 +18,9 @@ export default function Blog() {
     <div>
       <p>this is a blog</p>
       {/* {posts} */}
-      {posts?.map((post) => <article>{JSON.stringify(post)}</article>)}
+      {posts?.map((post) => (
+        <Post {...post}></Post>
+      ))}
     </div>
   );
 }
