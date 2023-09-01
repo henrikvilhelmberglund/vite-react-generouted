@@ -2,7 +2,7 @@
 
 ✔ 2. För varje post, rendera en <Post/>-komponent med ett inlägg som visar ut dess titel och textinnehåll. Längst ner i varje post ska det finnas en knapp för att visa information om användaren som skrev inlägget. @done(23-09-01 15:12)
 
-☐ 3. När knappen klickas på ska komponenten <UserInfo/> renderas inuti <Post/>-komponenten.
+✔ 3. När knappen klickas på ska komponenten <UserInfo/> renderas inuti <Post/>-komponenten. @done(23-09-01 15:42)
 
 ☐ 4. När <UserInfo/> renderas, ska data för användaren hämtas från /users-endpointen i samma API med hjälp av det id som skrev inlägget (userId). (T.ex om inläggets userId är 3, hämtar du data från https://jsonplaceholder.typicode.com/users/3)
 
