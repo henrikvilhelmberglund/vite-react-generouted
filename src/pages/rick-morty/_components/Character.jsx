@@ -1,4 +1,13 @@
-export default function Character({ i, image, species, gender, type, status, originName }) {
+export default function Character({
+  i,
+  name,
+  image,
+  species,
+  gender,
+  type,
+  status,
+  origin: { name: originName },
+}) {
   return (
     <article
       className="outline-black outline-1 outline-solid rounded-xl min-w-[300px] min-h-[300px] m-2"
