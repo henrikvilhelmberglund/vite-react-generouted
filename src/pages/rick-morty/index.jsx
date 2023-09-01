@@ -130,7 +130,7 @@ export default function Index() {
         {result?.error && <p>No characters were found.</p>}
         <section className="flex flex-wrap justify-start w-[70vw] mx-auto">
           {result?.results?.map(
-            ({ name, species, gender, type, image, origin: { name: originName } }, i) => (
+            ({ name, species, gender, type, status, image, origin: { name: originName } }, i) => (
               <article
                 className="outline-black outline-1 outline-solid rounded-xl min-w-[300px] min-h-[300px] m-2"
                 key={i}
@@ -140,6 +140,7 @@ export default function Index() {
                 <span className="">
                   {species} {gender.toLowerCase()} {type.toLowerCase()}
                 </span>
+                <p className="">{status}</p>
                 <p className="">{originName}</p>
               </article>
             )
