@@ -12,7 +12,14 @@ export default function Index() {
   const [selectedGender, setSelectedGender] = useState("All");
   const [selectedSpecies, setSelectedSpecies] = useState("All");
   const [selectedStatus, setSelectedStatus] = useState("All");
+  const [shouldFetch, setShouldFetch] = useState(false);
   const [result, setResult] = useState(null);
+
+  useEffect(() => {
+    if (shouldFetch) {
+      fetchResult();
+    }
+  }, [selectedName, selectedGender, selectedSpecies, selectedStatus]);
 
   async function fetchResult() {
     // old version
@@ -45,22 +52,55 @@ export default function Index() {
       <h1>Rick & Morty - How many characters</h1>
 
       <main className="flex flex-col mx-auto w-64 [&>*]:m-2 [&>*]:p-2">
-        <input onChange={(e) => setSelectedName(e.target.value)} type="text" placeholder="Name" />
-        <select onChange={(e) => setSelectedGender(e.target.value)} name="" id="">
+        <input
+          onBlur={(e) => {
+            setSelectedName(e.target.value);
+            setShouldFetch(true);
+          }}
+          type="text"
+          placeholder="Name"
+          onKeyDown={(e) => {
+            if (e.code === "Enter") {
+              setSelectedName(e.target.value);
+            }
+          }}
+        />
+        <select
+          onChange={(e) => {
+            setSelectedGender(e.target.value);
+            setShouldFetch(true);
+          }}
+          name=""
+          id=""
+        >
           {genders.map((gender, i) => (
             <option key={i} value={gender}>
               {gender}
             </option>
           ))}
         </select>
-        <select onChange={(e) => setSelectedSpecies(e.target.value)} name="" id="">
+        <select
+          onChange={(e) => {
+            setSelectedSpecies(e.target.value);
+            setShouldFetch(true);
+          }}
+          name=""
+          id=""
+        >
           {species.map((specie, i) => (
             <option key={i} value={specie}>
               {specie}
             </option>
           ))}
         </select>
-        <select onChange={(e) => setSelectedStatus(e.target.value)} name="" id="">
+        <select
+          onChange={(e) => {
+            setSelectedStatus(e.target.value);
+            setShouldFetch(true);
+          }}
+          name=""
+          id=""
+        >
           {statuses.map((status, i) => (
             <option key={i} value={status}>
               {status}
