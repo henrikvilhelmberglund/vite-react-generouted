@@ -7,7 +7,7 @@ export default function Post({ userId, title, body }) {
     <article className="outline-amber-400 outline-1 outline-solid">
       <h2>{title}</h2>
       <p>{body}</p>
-      {showUser && <UserInfo></UserInfo>}
+      {showUser && <UserInfo userId={userId}></UserInfo>}
       <button onClick={() => setShowUser((p) => (p = !p))}>
         {showUser ? "Hide" : "Show"} user info
       </button>
