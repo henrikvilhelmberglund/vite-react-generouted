@@ -7,6 +7,7 @@ export type Path =
   | `/`
   | `/blog`
   | `/cool-route`
+  | `/rick-morty`
 
 export type Params = {
   

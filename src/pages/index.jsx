@@ -9,6 +9,8 @@ export default function Home() {
       <Link to="/cool-route">Cool route here</Link>
       <br />
       <Link to="/blog">Blog</Link>
+      <br />
+      <Link to="/rick-morty">Rick & Morty - How many characters</Link>
     </div>
   );
 }
