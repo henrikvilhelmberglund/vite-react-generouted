@@ -6,6 +6,6 @@
 
 ✔ 4. När <UserInfo/> renderas, ska data för användaren hämtas från /users-endpointen i samma API med hjälp av det id som skrev inlägget (userId). (T.ex om inläggets userId är 3, hämtar du data från https://jsonplaceholder.typicode.com/users/3) @done(23-09-01 15:55)
 
-☐ 5. I <UserInfo>-komponenten ska du skriva ut användarens användarnamn, email samt stad.
+✔ 5. I <UserInfo>-komponenten ska du skriva ut användarens användarnamn, email samt stad. @done(23-09-01 16:12)
 
-☐ 6. Extra: Varje <Post/> ska även automatiskt ladda in kommentarer med respektive postId från /comments-endpointen: https://jsonplaceholder.typicode.com/comments/
+✔ 6. Extra: Varje <Post/> ska även automatiskt ladda in kommentarer med respektive postId från /comments-endpointen: https://jsonplaceholder.typicode.com/comments/ @done(23-09-01 16:32)

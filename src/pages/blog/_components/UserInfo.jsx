@@ -12,5 +12,15 @@ export default function UserInfo({ userId }) {
     }
     fetchUser();
   }, []);
-  return <>{user && <p>{JSON.stringify(user)}</p>}</>;
+  return (
+    <>
+      {user && (
+        <>
+          <h3>{user.username}</h3>
+          <p>{user.email}</p>
+          <p>{user.address.city}</p>
+        </>
+      )}
+    </>
+  );
 }
