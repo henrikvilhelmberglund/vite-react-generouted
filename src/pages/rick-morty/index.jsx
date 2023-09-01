@@ -15,14 +15,23 @@ export default function Index() {
   const [result, setResult] = useState(null);
 
   async function fetchResult() {
-    const finalQuery = `
-      ${selectedName ? "name=" + selectedName + "&" : ""} 
-      ${selectedGender !== "All" ? "gender=" + selectedGender + "&" : ""} 
-      ${selectedSpecies !== "All" ? "species=" + selectedSpecies + "&" : ""} 
-      ${selectedStatus !== "All" ? "status=" + selectedStatus : ""}
-      `
-      .replaceAll(" ", "")
-      .replaceAll("\n", "");
+    // old version
+    // const finalQuery = `
+    //   ${selectedName ? "name=" + selectedName + "&" : ""}
+    //   ${selectedGender !== "All" ? "gender=" + selectedGender + "&" : ""}
+    //   ${selectedSpecies !== "All" ? "species=" + selectedSpecies + "&" : ""}
+    //   ${selectedStatus !== "All" ? "status=" + selectedStatus : ""}
+    //   `
+    //   // this breaks mythological creature
+    //   .replaceAll(" ", "")
+    //   .replaceAll("\n", "");
+
+    const query = [];
+    if (selectedName) query.push(`name=${encodeURIComponent(selectedName)}`);
+    if (selectedGender !== "All") query.push(`gender=${encodeURIComponent(selectedGender)}`);
+    if (selectedSpecies !== "All") query.push(`species=${encodeURIComponent(selectedSpecies)}`);
+    if (selectedStatus !== "All") query.push(`status=${encodeURIComponent(selectedStatus)}`);
+    const finalQuery = query.join("&");
 
     const response = await fetch(`${API}${finalQuery}`);
     const data = await response.json();
