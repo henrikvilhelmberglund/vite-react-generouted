@@ -67,6 +67,12 @@ export default function Index() {
             </option>
           ))}
         </select>
+        <p>
+          You're looking for {selectedName ? `someone named ${selectedName}` : `anyone`} with
+          {selectedGender === "All" ? " any gender" : ` a ${selectedGender} gender`} of
+          {selectedSpecies === "All" ? " any species" : ` a ${selectedSpecies} species`} with
+          {selectedStatus === "All" ? " any status " : ` the status ${selectedStatus}`}
+        </p>
         <button
           onClick={() => {
             fetchResult();
