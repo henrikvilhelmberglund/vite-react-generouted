@@ -7,6 +7,8 @@ export default function Home() {
       <h1>Generouted</h1>
       <h2>It works!</h2>
       <Link to="/cool-route">Cool route here</Link>
+      <br />
+      <Link to="/blog">Blog</Link>
     </div>
   );
 }
