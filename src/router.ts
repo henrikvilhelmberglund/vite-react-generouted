@@ -9,6 +9,7 @@ export type Path =
   | `/cool-route`
   | `/rick-morty`
   | `/streak-counter`
+  | `/streak-counter/user`
 
 export type Params = {
   
