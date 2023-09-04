@@ -7,8 +7,11 @@ export type Path =
   | `/`
   | `/blog`
   | `/cool-route`
+  | `/generouted-bug`
   | `/rick-morty`
   | `/streak-counter`
+  | `/streak-counter/Child`
+  | `/streak-counter/Parent`
   | `/streak-counter/user`
 
 export type Params = {

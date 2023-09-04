@@ -1,18 +1,15 @@
 import { useEffect, useState } from "react";
 import Child from "./Child";
+import { useOutletContext } from "react-router-dom";
 
-export default function Parent({ userActivity }) {
-  const [streaks, setStreaks] = useState([
-    { activity: "eating", count: 3 },
-    { activity: "programming", count: 4 },
-    { activity: "meditating", count: 2 },
-  ]);
+export default function Parent() {
+  let { streaks, setStreaks } = useOutletContext();
 
-  useEffect(() => {
-    if (userActivity) {
-      setStreaks((p) => [...p, userActivity]);
-    }
-  }, [userActivity]);
+  // useEffect(() => {
+  //   if (userActivity) {
+  //     setStreaks((p) => [...p, userActivity]);
+  //   }
+  // }, [userActivity]);
 
   function updateCount(incI, value) {
     setStreaks((p) => {

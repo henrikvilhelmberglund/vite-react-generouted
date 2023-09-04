@@ -13,6 +13,8 @@ export default function Home() {
       <Link to="/rick-morty">Rick & Morty - How many characters</Link>
       <br />
       <Link to="/streak-counter">Streak counter</Link>
+      <br />
+      <Link to="/generouted-bug">Generouted bug</Link>
     </div>
   );
 }
