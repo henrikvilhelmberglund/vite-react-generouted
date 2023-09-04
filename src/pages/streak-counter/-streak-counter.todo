@@ -1,0 +1,5 @@
+☐ Skapa en "Streak Counter"-applikation där du kan hålla kolla på hur många dagar i rad du gjort vissa aktiviteter (träning, kodat, mediterat etc.
+
+☐ På startsidan ska du se samtliga streaks med tillhörande counters. Dvs en räknare som du kan öka och minska med 1 via knapptryck (en +1-knapp och en -1 knapp).
+
+☐ Skapa en ny route där användare ska kunna lägga till en ny aktivitet med tillhörande counter. Användare ska även kunna ge eget startvärde för denna counter.

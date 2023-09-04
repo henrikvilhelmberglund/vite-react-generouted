@@ -11,6 +11,8 @@ export default function Home() {
       <Link to="/blog">Blog</Link>
       <br />
       <Link to="/rick-morty">Rick & Morty - How many characters</Link>
+      <br />
+      <Link to="/streak-counter">Streak counter</Link>
     </div>
   );
 }
