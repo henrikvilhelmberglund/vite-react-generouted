@@ -1,0 +1,43 @@
+Routes:
+
+/ (<Home/>)
+  
+/profile (<Profile/>)
+  
+   
+  
+Komponenter:
+  
+  App.js
+  
+  UserList.jsx
+  
+  User.jsx
+  
+✔ I App.js ska du ha 5 användare sparade i en array. Varje användare ska vara ett objekt med följande egenskaper (se exempel): @done(23-09-06 14:45)
+
+    {
+   
+      userName:"CaptainFrisk",
+   
+      name:"Test Testsson",
+   
+      age:99,
+   
+      location: {
+   
+        country:"Sweden",
+   
+        city:"Stockholm"
+   
+      }
+   
+    }
+   
+  ✔ När man befinner sig på startsidan ska UserList-komponenten renderas. Skicka datat över användare till denna komponent. @done(23-09-06 14:47)
+   
+  ☐ I UserList-komponenten ska du loopa igenom all data och rendera ut en <User/>-komponent för varje användare.
+   
+  ☐ Varje User-komponent ska endast skriva ut användarens användarnamn (username) samt en “Go to profile”-knapp som ska navigera till “/profile”-sidan).
+   
+  ☐ När man kommer till /profile (<Profile/>), ska användaren se all information om användaren.

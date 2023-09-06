@@ -10,9 +10,8 @@ export type Path =
   | `/generouted-bug`
   | `/rick-morty`
   | `/streak-counter`
-  | `/streak-counter/Child`
-  | `/streak-counter/Parent`
   | `/streak-counter/user`
+  | `/use-location`
 
 export type Params = {
   

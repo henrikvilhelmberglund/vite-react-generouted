@@ -15,6 +15,8 @@ export default function Home() {
       <Link to="/streak-counter">Streak counter</Link>
       <br />
       <Link to="/generouted-bug">Generouted bug</Link>
+      <br />
+      <Link to="/use-location">useLocation</Link>
     </div>
   );
 }
