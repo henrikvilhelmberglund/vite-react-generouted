@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Parent from "../Parent";
+import Parent from "../_components/Parent";
 import { Link, useOutletContext } from "react-router-dom";
 
 export default function User() {
@@ -33,12 +33,6 @@ export default function User() {
         <button onClick={() => addActivity()}>Add activity</button>
       </div>
       <Parent></Parent>
-      {streaks &&
-        streaks.map(
-          (streak, i) =>
-            Object.keys(streak).length > 0 && <p key={i}>streak: {JSON.stringify(streak)}</p>
-        )}
-      <p>hello 3</p>
     </>
   );
 }
