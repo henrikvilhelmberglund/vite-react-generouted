@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
-import Parent from "./Parent";
+import Parent from "./_components/Parent";
 
 export default function StreakCounter() {
   const [streaks, setStreaks] = useState([

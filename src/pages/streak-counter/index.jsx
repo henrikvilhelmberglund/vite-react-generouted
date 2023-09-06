@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Parent from "./Parent";
+import Parent from "./_components/Parent";
 
 export default function Index() {
   return (
