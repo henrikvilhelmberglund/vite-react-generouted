@@ -36,8 +36,8 @@ Komponenter:
    
   ✔ När man befinner sig på startsidan ska UserList-komponenten renderas. Skicka datat över användare till denna komponent. @done(23-09-06 14:47)
    
-  ☐ I UserList-komponenten ska du loopa igenom all data och rendera ut en <User/>-komponent för varje användare.
+  ✔ I UserList-komponenten ska du loopa igenom all data och rendera ut en <User/>-komponent för varje användare. @done(23-09-06 15:46)
    
-  ☐ Varje User-komponent ska endast skriva ut användarens användarnamn (username) samt en “Go to profile”-knapp som ska navigera till “/profile”-sidan).
+  ✔ Varje User-komponent ska endast skriva ut användarens användarnamn (username) samt en “Go to profile”-knapp som ska navigera till “/profile”-sidan). @done(23-09-06 15:47)
    
   ☐ När man kommer till /profile (<Profile/>), ska användaren se all information om användaren.

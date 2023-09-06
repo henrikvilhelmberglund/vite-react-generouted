@@ -12,6 +12,7 @@ export type Path =
   | `/streak-counter`
   | `/streak-counter/user`
   | `/use-location`
+  | `/use-location/profile`
 
 export type Params = {
   
