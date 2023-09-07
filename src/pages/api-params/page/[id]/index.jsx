@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RenderUser from "../_components/RenderUser";
+import RenderUser from "../../_components/RenderUser";
 import { useLoaderData, useNavigation, useParams } from "react-router-dom";
 
 export default function Page() {
@@ -31,10 +31,10 @@ export default function Page() {
   );
 }
 
-export const Loader = async () => {
+export const Loader = async ({ params }) => {
   console.log("Entered page");
-  let response = await fetch(`https://jsonplaceholder.typicode.com/users/`);
+  let response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`);
   let data = await response.json();
 
-  return JSON.stringify(data[0]);
+  return data.name;
 };

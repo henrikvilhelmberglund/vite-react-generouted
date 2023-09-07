@@ -7,6 +7,7 @@ export type Path =
   | `/`
   | `/api-params`
   | `/api-params/page`
+  | `/api-params/page/:id`
   | `/blog`
   | `/cool-route`
   | `/generouted-bug`
@@ -17,7 +18,7 @@ export type Path =
   | `/use-location/profile`
 
 export type Params = {
-  
+  '/api-params/page/:id': { id: string }
 }
 
 export type ModalPath = never
